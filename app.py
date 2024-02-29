@@ -17,6 +17,7 @@ from nltk.tokenize.treebank import TreebankWordDetokenizer
 from nltk.stem import PorterStemmer
 from nltk.stem.wordnet import WordNetLemmatizer
 nltk.download('punkt')
+nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('averaged_perceptron_tagger')
 from wordcloud import WordCloud
