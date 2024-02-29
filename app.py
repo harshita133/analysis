@@ -141,8 +141,9 @@ def index():
     return render_template('upload.html')
 
 temp={}
-@app.route('/upload', methods=['POST'])
+@app.route('/upload', methods=['POST','GET'])
 def upload():
+    print("hello g")
     year = int(request.form.get('year'))
     quarter = int(request.form.get('quarter'))
     company=(request.form.get('company'))
